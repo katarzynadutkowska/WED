@@ -1,3 +1,3 @@
 Access
 
-<a href="/Database/WED_988.csv" download="WED_988GHz.csv">Download file here</a>
+<a href="/Database/WED_988.csv" download="WED_988GHz.csv">988 GHz</a>
