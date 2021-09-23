@@ -1,3 +1,5 @@
+<img src="Images/WED_logo.jpeg" alt="hi" class="inline"/>
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/katarzynadutkowska/wed.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
