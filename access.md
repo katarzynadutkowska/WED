@@ -5,4 +5,4 @@ To download a file right-click on the link and choose "Download Linked File" or 
 
 
 1. <a href="Database/WED_988.csv">Water line transition 2<sub>02</sub> - 1<sub>11</sub> at 987.9267 GHz</a><br>
-This file contains data from three surveys: Water in Star-forming Regions with Herschel (van Dishoeck et al. 2021), William Herschel Line Legacy (Mottram et al. 2017) and Water emission from outflows and hot cores in the Cygnus X protostar (PI: S. Bontemps). This file is used in a default version of the galaxy-in-a-box-model (see [Projects](./projects.html)).
+This file contains data from three surveys: Water in Star-forming Regions with Herschel (van Dishoeck et al. 2021), William Herschel Line Legacy (Mottram et al. 2017) and Water emission from outflows and hot cores in the Cygnus X protostar (PI: S. Bontemps). This is also a default file used in the galaxy-in-a-box-model (see [Projects](./projects.html)).
