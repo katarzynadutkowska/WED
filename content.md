@@ -5,21 +5,21 @@ WED contains water fluxes and parameters describing the emitting source properti
 
 Water Emission Database is stored and extended using the MySQL Database Service. The data is shared through regularly updated CSV files and is independent of the database driver for safety measures. The tables are constructed in the following way:
 
-| obs_id  | object | obj_type | ra_2000 | dec_2000 | transition | freq | 
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Ordinal numbers | Name of the object | Object type<sup>*</sup> | RA (J2000) | Dec (J2000) | Transition | <span style='font-size:15px;'>&nu;</span> (GHz)<sup>**</sup> |
-
-|telescope | instrument | obs_res | distance | luminosity| 
+| obs_id  | object | obj_type | ra_2000 | dec_2000 |
 | ---- | ---- | ---- | ---- | ---- |
-| Telescope used | Instrument used for observations | Resolution ('') | Distance to the source (pc)| *L*<sub>bol</sub> (*L*<sub><span style='font-size:10px;'>&#9737;</span></sub>) |
+| Ordinal numbers | Name of the object | Object type<sup>*</sup> | RA (J2000) | Dec (J2000) |
 
-| tbol | menv | vlsr | flux | flux_err |
-| ---- | ---- | ---- | ---- | ---- | 
-|  Bolometric temperature (K) | Envelope mass (*M*<sub><span style='font-size:10px;'>&#9737;</span></sub>) | Velocity (km/s) | Observed flux | Flux error |
+| transition | freq | telescope | instrument | obs_res |
+| ---- | ---- | ---- | ---- | ---- |
+| Transition | <span style='font-size:15px;'>&nu;</span> (GHz)<sup>**</sup> | Telescope used | Instrument used for observations | Resolution ('') |
 
-| unit | ref | extra |
-| ---- | ---- | ---- |
-| Unit of flux <br>(K km s<sup>-1</sup> / W cm<sup>-2</sup> / W m<sup>-2</sup> / erg s<sup>-1</sup> cm<sup>-2</sup>) | References to flux measurements | Additional information/references |
+| distance | luminosity |  tbol | menv | vlsr |
+| ---- | ---- | ---- | ---- | ---- |
+| Distance to the source (pc)| *L*<sub>bol</sub> (*L*<sub><span style='font-size:10px;'>&#9737;</span></sub>) | Bolometric temperature (K) | Envelope mass (*M*<sub><span style='font-size:10px;'>&#9737;</span></sub>) | Velocity (km/s) |
+
+| flux | flux_err | unit | ref | extra |
+| ---- | ---- |  ---- | ---- | ---- |
+| Observed flux | Flux error | Unit of flux <br>(K km s<sup>-1</sup> / W cm<sup>-2</sup> / W m<sup>-2</sup> / erg s<sup>-1</sup> cm<sup>-2</sup>) | References to flux measurements | Additional information/references |
 
 <sup>*</sup> 
 Legend:
