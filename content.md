@@ -4,7 +4,7 @@ Water Emission Database is stored and extended using the MySQL Database Service.
 
 | obs_id  | object | obj_type | ra_2000 | dec_2000 | transition | freq | 
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Ordinal numbers | Name of the object | Object type<sup>*</sup> | RA (J2000) | Dec (J2000) | Transition | Frequency (GHz)<sup>**</sup> |
+| Ordinal numbers | Name of the object | Object type<sup>*</sup> | RA (J2000) | Dec (J2000) | Transition | f (GHz)<sup>**</sup> |
 
 |telescope | instrument | obs_res | distance | luminosity| 
 | ---- | ---- | ---- | ---- | ---- |
