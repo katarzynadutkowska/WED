@@ -18,7 +18,7 @@ Water Emission Database is stored and extended using the MySQL Database Service.
 | ---- | ---- | ---- |
 | Unit of flux <br>(K km s<sup>-1</sup> / W cm<sup>-2</sup> / W m<sup>-2</sup> / erg s<sup>-1</sup> cm<sup>-2</sup>) | References to flux measurements | Additional information |
 
-<sup>1</sup> 
+<sup>*</sup> 
 Legend:
  - YSO   - Young Stellar Object
  - IM    - Intermediate-mass
@@ -35,4 +35,4 @@ Legend:
  - PS    - possible pre-stellar core
  - PDR   - photodissociation region
 
-<sup>2</sup> All of the frequencies to corresponding transitions are taken from the [LAMDA database](https://home.strw.leidenuniv.nl/~moldata/) ([Schöier, F.L., van der Tak, F.F.S., van Dishoeck E.F., Black, J.H. 2005, A&A 432, 369-379](https://ui.adsabs.harvard.edu/abs/2005A%26A...432..369S/abstract)).
+<sup>**</sup> All of the frequencies to corresponding transitions are taken from the [LAMDA database](https://home.strw.leidenuniv.nl/~moldata/) ([Schöier, F.L., van der Tak, F.F.S., van Dishoeck E.F., Black, J.H. 2005, A&A 432, 369-379](https://ui.adsabs.harvard.edu/abs/2005A%26A...432..369S/abstract)).
