@@ -1,4 +1,4 @@
-### Content
+## Content
 <hr>
 
 WED contains water fluxes and parameters describing the emitting source properties. It currently covers 79 observed water transitions up to the para-H<sub>2</sub>O 9<sub>19</sub> - 8<sub>08</sub> transition. Emitting sources at these transitions include the whole range of Galactic protostellar sources, with the majority of low-mass protostars. Currently we are working on adding all of the Galactic data to the database. In the future we will also extend WED with the extragalactic data.
