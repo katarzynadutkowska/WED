@@ -15,4 +15,4 @@ Observations of the Milky Way (e.g., Water In Star-forming regions with Herschel
 
 ## Contact
 <hr>
-This project is maintained by *Katarzyna M. Dutkowska, M.Sc.* (she/her). In case of any questions feel free to send an email at following address: dutkowska **at** nbi.ku.dk
+This project is maintained by *Katarzyna M. Dutkowska, M.Sc.* (she/her). In case of any questions feel free to send an email at the following address: dutkowska **at** nbi.ku.dk
