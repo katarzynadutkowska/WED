@@ -17,9 +17,13 @@ Water Emission Database is stored and extended using the MySQL Database Service.
 | ---- | ---- | ---- | ---- | ---- |
 | Distance to the source (pc)| *L*<sub>bol</sub> (*L*<sub><span style='font-size:10px;'>&#9737;</span></sub>) | Bolometric temperature (K) | Envelope mass (*M*<sub><span style='font-size:10px;'>&#9737;</span></sub>) | Velocity (km/s) |
 
-| flux | flux_err | unit | ref | extra |
-| ---- | ---- |  ---- | ---- | ---- |
-| Observed flux | Flux error | Unit of flux <br>(K km s<sup>-1</sup> / W cm<sup>-2</sup> / W m<sup>-2</sup> / erg s<sup>-1</sup> cm<sup>-2</sup>) | References to flux measurements | Additional information/references |
+| flux | flux_err | unit |
+| ---- | ---- |  ---- |
+| Observed flux | Flux error | Unit of flux <br>(K km s<sup>-1</sup> / W cm<sup>-2</sup> / W m<sup>-2</sup> / erg s<sup>-1</sup> cm<sup>-2</sup>) |
+
+| ref | extra |
+| ---- | ---- |
+| References to flux measurements | Additional information/references to other data|
 
 <sup>*</sup> 
 Legend:
