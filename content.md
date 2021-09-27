@@ -8,7 +8,7 @@ Water Emission Database is stored and extended using the MySQL Database Service.
 
 |telescope | instrument | obs_res | distance | luminosity| 
 | ---- | ---- | ---- | ---- | ---- |
-| Name of the telescope | Instrument used for observations | Resolution ('') | Distance to the source (pc)| *L*<sub>bol</sub> (*L*<sub><span style='font-size:10px;'>&#9737;</span></sub>) |
+| Telescope used | Instrument used for observations | Resolution ('') | Distance to the source (pc)| *L*<sub>bol</sub> (*L*<sub><span style='font-size:10px;'>&#9737;</span></sub>) |
 
 | tbol | menv | vlsr | flux | flux_err |
 | ---- | ---- | ---- | ---- | ---- | 
@@ -16,7 +16,7 @@ Water Emission Database is stored and extended using the MySQL Database Service.
 
 | unit | ref | extra |
 | ---- | ---- | ---- |
-| Unit of flux <br>(K km s<sup>-1</sup> / W cm<sup>-2</sup> / W m<sup>-2</sup> / erg s<sup>-1</sup> cm<sup>-2</sup>) | References to flux measurements | Additional information |
+| Unit of flux <br>(K km s<sup>-1</sup> / W cm<sup>-2</sup> / W m<sup>-2</sup> / erg s<sup>-1</sup> cm<sup>-2</sup>) | References to flux measurements | Additional information/references |
 
 <sup>*</sup> 
 Legend:
