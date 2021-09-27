@@ -1,5 +1,5 @@
 ### Access
-<hr>
+<hr.new4>
 Currently the access to WED is restricted to **CSV** files, which are regularly updated whenever a change in the database occurs. The files available for download are linked and described below. 
 To download a file right-click on the link and choose "Download Linked File" or "Download Linked File As...". Left-clicking on the link will open an **ASCII** version of the table in the same tab.
 
