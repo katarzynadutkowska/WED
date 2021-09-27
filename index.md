@@ -5,3 +5,4 @@ This website is dedicated to the **W**ater **E**mission **D**atabase (Dutkowska 
 
 
 ## Contact
+This project is maintained by *Katarzyna M. Dutkowska, M.Sc.* (she/her). In case of any questions feel free to send an email at following address: dutkowska at nbi.ku.dk
