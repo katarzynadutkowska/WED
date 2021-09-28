@@ -2,4 +2,4 @@
 <hr>
 Galaxy-in-a-box
 
-<img src="./Images/galaxy-in-a-box.png" alt="galaxy-in-a-box" style="max-width: 50%">
+<center><img src="./Images/galaxy-in-a-box.png" alt="galaxy-in-a-box" style="max-width: 70%"></center>
