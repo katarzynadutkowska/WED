@@ -11,7 +11,7 @@ Over the past years, there have been many projects observing water emission towa
 ## Why water?
 <hr>
 
-Observations of the Milky Way (e.g., Water In Star-forming regions with Herschel (WISH); van Dishoeck et al. 2021) reveal that Galactic water emission is primarily associated with active star formation, as it is almost uniformly associated with molecular outflows from protostars. Accordingly, water is a direct signpost of active star formation in the Milky Way. Water is also among readily observed high-redshift molecules. By bringing all of these observations together, we can create a tool for statistically meaningful comparisons that can help us better understand the observable Universe. Hi Troels,
+Observations of the Milky Way (e.g., Water In Star-forming regions with Herschel (WISH); van Dishoeck et al. 2021) reveal that Galactic water emission is primarily associated with active star formation, as it is almost uniformly associated with molecular outflows from protostars. Accordingly, water is a direct signpost of active star formation in the Milky Way. Water is also among readily observed high-redshift molecules. By bringing all of these observations together, we can create a tool for statistically meaningful comparisons that can help us better understand the observable Universe.
 
 ## Contact
 <hr>
