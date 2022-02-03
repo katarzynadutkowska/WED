@@ -1,7 +1,7 @@
 ## Welcome!
 <hr>
 
-This website is dedicated to the **W**ater **E**mission **D**atabase (Dutkowska et al. 2021, in prep.). Here you will find all of the crucial information on the content of the database, use of the data and projects associated. 
+This website is dedicated to the **W**ater **E**mission **D**atabase (Dutkowska & Kristensen 2022, subm.). Here you will find all of the crucial information on the content of the database, use of the data and projects associated. 
 
 ## About this project
 <hr>
