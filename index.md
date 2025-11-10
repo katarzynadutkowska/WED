@@ -25,7 +25,7 @@ Water is a key tracer of energetic processes in the interstellar medium.
 In the Milky Way, it traces active star formation, as it is almost always associated with molecular outflows from protostars (see WISH; van Dishoeck et al. 2021).
 At high redshift, water is among the few molecules that can be detected directly, linking small-scale star-forming processes to galaxy-scale evolution.
 
-By bringing these observations together, WED enables **statistically meaningful comparisons** across cosmic environments — and remains open to future extensions as new facilities deliver richer datasets.
+By bringing these observations together, WED enables **statistically meaningful comparisons** across cosmic environments and remains open to future extensions as new facilities deliver richer datasets.
 
 ## Current status & future directions
 <hr>
