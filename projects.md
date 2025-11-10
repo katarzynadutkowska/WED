@@ -1,9 +1,9 @@
 ## Projects
 <hr>
 ### Galaxy-in-a-box
-</p>
+
 <p style="text-align:center"><img src="./Images/gal-in-a-box-shadow.jpeg" alt="galaxy in a box" style="max-width: 35%"></p>
-<p>
+
 <p>
 <em>Galaxy-in-a-Box</em> is a model that predicts galactic-scale emission from active star formation based on the properties of
 protostellar outflows. In its current form, it focuses on the water line emission at 987.9 GHz
