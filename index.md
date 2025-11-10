@@ -1,7 +1,7 @@
 ## Welcome!
 <hr>
 
-This website is dedicated to the **W**ater **E**mission **D**atabase (Dutkowska & Kristensen 2022, in press). Here you will find all of the crucial information on the content of the database, use of the data and projects associated. 
+This website is dedicated to the **W**ater **E**mission **D**atabase (Dutkowska & Kristensen 2022, *A&A*, 667, A135). Here you will find all of the crucial information on the content of the database, use of the data and projects associated. 
 
 ## About this project
 <hr>
@@ -15,4 +15,4 @@ Observations of the Milky Way (e.g., Water In Star-forming regions with Herschel
 
 ## Contact
 <hr>
-This project is maintained by *Katarzyna M. Dutkowska, M.Sc.* (she/her). In case of any questions or lack of files for the transitions of choice, feel free to send an email at the following address: dutkowska **at** nbi.ku.dk
+This project is maintained by *Dr. Katarzyna M. Dutkowska* (she/her). In case of any questions or lack of files for the transitions of choice, feel free to send an email at the following address: dutkowska **at** strw.leidenuniv.nl
