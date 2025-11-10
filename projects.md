@@ -1,6 +1,9 @@
 ## Projects
 <hr>
 ### Galaxy-in-a-box
+</p>
+<p style="text-align:center"><img src="./Images/gal-in-a-box-shadow.jpeg" alt="galaxy in a box" style="max-width: 35%"></p>
+<p>
 <p>
 <em>Galaxy-in-a-Box</em> is a model that predicts galactic-scale emission from active star formation based on the properties of
 protostellar outflows. In its current form, it focuses on the water line emission at 987.9 GHz
@@ -10,14 +13,17 @@ emission to protostellar outflows and a substantial number of observational data
 </p>
 
 <p>
-The ultimate goal is to connect the emission from outflows—key signposts of active star formation—with what we observe
-on larger, integrated scales, where stellar feedback shapes the surrounding medium. This allows us to ask questions such as:
-“How much of the observed galactic emission originates from outflows?” and “Can we use this to characterize the star-formation
-activity of a galaxy—or even disentangle the components that make up its total emission?”
-</p>
-<p style="text-align:center"><img src="./Images/gal-in-a-box-shadow.jpeg" alt="galaxy in a box" style="max-width: 35%"></p>
-<p>
-So far, <em>Galaxy-in-a-Box</em> (and, by extension, the WED framework) has shown that the total H<sub>2</sub>O emission is primarily
+The ultimate goal is to connect the emission from outflows, which are one of the key signposts of active star formation,
+with what we observe on larger scales—where molecular feedback can capture more than just star formation. Ideally, we could identify a <em>clean</em> 
+molecular diagnostic of star formation that remains reliable across different environments. This perspective allows us to ask questions such as:
+
+<ul>
+  <li>To what extent does the emission traced by a given molecular line actually originate from ongoing star formation?</li>
+  <li>Can this emission be used to quantify the level of star-formation activity in different environments?</li>
+  <li>Is it possible to disentangle the contribution of star-formation-driven outflows from other sources within the same line emission?</li>
+</ul>
+
+So far, <em>Galaxy-in-a-Box</em> (and so the WED framework) has shown that the total H<sub>2</sub>O emission is primarily
 governed by the star-formation efficiency and the adopted free-fall-time scaling, with only a minor dependence on the IMF
 and molecular-cloud mass function
 (<a href="https://www.aanda.org/articles/aa/full_html/2022/11/aa43235-22/aa43235-22.html">Dutkowska &amp; Kristensen 2022, A&amp;A 667, A135</a>).
