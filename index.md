@@ -32,9 +32,9 @@ By bringing these observations together, WED enables **statistically meaningful 
 
 WED is **currently paused**, but a substantial amount of additional material already exists and awaits processing and inclusion.
 The next stage would involve:
-	•	Integrating new and legacy water-emission observations,
-	•	Expanding the metadata and analysis tools, and
-	•	Preparing a broader public release.
+ - Integrating new and legacy water-emission observations,
+ - Expanding the metadata and analysis tools, and
+ - Preparing a broader public release.
 
 If you’re interested in joining this effort — through data sharing, analysis, or coding — please get in touch.
 
