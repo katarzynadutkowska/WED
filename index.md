@@ -1,4 +1,4 @@
-<div style="background-color:#f2f2f2; border-left: 4px solid #007acc; padding: 10px 15px; border-radius: 6px; margin: 1em 0;">
+<div style="background-color:#f2f2f2; border-left: 4px solid red; padding: 10px 15px; border-radius: 6px; margin: 1em 0;">
 <b>Status update (Nov 2025):</b> WED is in a paused state, but a large collection of unpublished data is ready for future inclusion. Collaborators interested in analysis or database development are warmly encouraged to get in touch.
 </div>
 
