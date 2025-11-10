@@ -14,7 +14,7 @@ emission to protostellar outflows and a substantial number of observational data
 
 <p>
 The ultimate goal is to connect the emission from outflows, which are one of the key signposts of active star formation,
-with what we observe on larger scales—where molecular feedback can capture more than just star formation. Ideally, we could identify a <em>clean</em> 
+with what we observe on larger scales, where molecular feedback can capture more than just star formation. Ideally, we could identify a <em>clean</em> 
 molecular diagnostic of star formation that remains reliable across different environments. This perspective allows us to ask questions such as:
 
 <ul>
