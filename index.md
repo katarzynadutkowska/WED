@@ -1,3 +1,7 @@
+<div style="background-color:#f2f2f2; border-left: 4px solid #007acc; padding: 10px 15px; border-radius: 6px; margin: 1em 0;">
+<b>Status update (Nov 2025):</b> WED is in a paused state, but a large collection of unpublished data is ready for future inclusion. Collaborators interested in analysis or database development are warmly encouraged to get in touch.
+</div>
+
 ## Welcome!
 <hr>
 
@@ -11,7 +15,7 @@ Over the years, numerous surveys have observed water emission across a wide rang
 The goal of WED is to collect these observations into a single, consistent framework, making it easier to compare, visualize, and interpret water’s role in different environments.
 
 At present, the public release represents the **first version** of the database.
-Additional datasets — including unpublished or reprocessed files already compiled — remain **unreleased but available for future integration**.
+Additional datasets, including unpublished or reprocessed files already compiled, remain **unreleased but available for future integration**.
 If you’re interested in contributing, analyzing, or helping expand this material, I would love to hear from you.
 
 ## Why water?
@@ -37,6 +41,7 @@ If you’re interested in joining this effort — through data sharing, analysis
 ## Contact
 <hr>
 This project is maintained by *Dr. Katarzyna M. Dutkowska* (she/her). 
+
 ✉️ dutkowska **at** strw.leidenuniv.nl
 
 
