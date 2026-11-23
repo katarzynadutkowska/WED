@@ -1,8 +1,25 @@
-## Projects
-<hr>
-### Galaxy-in-a-box
+---
+title: Projects
 
-<p style="text-align:center"><img src="./Images/gal-in-a-box-shadow.jpeg" alt="galaxy in a box" style="max-width: 35%"></p>
+# Cards shown at the bottom of the page.
+cards:
+  - label: Paper · 2022
+    title: Water emission tracing active star formation from the Milky Way to high-z galaxies
+    meta: Dutkowska & Kristensen, A&A 667, A135
+    url: https://www.aanda.org/articles/aa/full_html/2022/11/aa43235-22/aa43235-22.html
+  - label: Paper · 2023
+    title: Star-formation-rate estimates from water emission
+    meta: Dutkowska & Kristensen, A&A 674, A95
+    url: https://www.aanda.org/articles/aa/full_html/2023/06/aa45336-22/aa45336-22.html
+  - label: Code
+    title: galaxy-in-a-box
+    meta: Code and documentation on GitHub
+    url: https://github.com/katarzynadutkowska/galaxy-in-a-box
+---
+
+## Galaxy-in-a-Box
+
+<img class="figure" src="/Images/gal-in-a-box-shadow.jpeg" alt="Illustration of the Galaxy-in-a-Box model">
 
 <p>
 <em>Galaxy-in-a-Box</em> is a model that predicts galactic-scale emission from active star formation based on the properties of

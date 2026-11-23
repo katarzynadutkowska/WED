@@ -1,0 +1,155 @@
+---
+import Base from '../layouts/Base.astro';
+import * as page from '../../content/access.md';
+import { site, csvFile } from '../lib/data.js';
+
+const files = (page.frontmatter.files || []).map((f) => ({ ...f, ...csvFile(f.file) }));
+const isNum = (v) => v !== '' && v !== 'NULL' && !isNaN(Number(v));
+const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+/** "2_02 - 1_11" → 2<sub>02</sub> – 1<sub>11</sub> */
+const transition = (v) => escapeHtml(v).replace(/(\d+)_(\d+)/g, '$1<sub>$2</sub>').replace(/ - /g, ' – ');
+const LONG = 48;
+
+/** Prepare each file's table: which columns are numeric, and how each cell is shown. */
+const tables = files.map((f) => {
+  const numeric = f.header.map((_, c) => f.rows.every((r) => r[c] === '' || r[c] === 'NULL' || isNum(r[c])));
+  const rows = f.rows.map((r) => r.map((v, c) => {
+    const name = f.header[c];
+    const empty = v === '' || v === 'NULL';
+    return {
+      text: empty ? '—' : v,
+      html: name === 'transition' && !empty ? transition(v) : null,
+      long: !empty && v.length > LONG,
+      cls: numeric[c] ? 'num' : v.length > LONG ? 'long' : undefined,
+      sort: empty ? '' : v,
+    };
+  }));
+  return { numeric, rows };
+});
+---
+<Base title={page.frontmatter.title} current="access">
+  <div class="page-head">
+    <p class="eyebrow">WED</p>
+    <h1>{page.frontmatter.title}</h1>
+  </div>
+  <div class="page-body">
+    <div class="md"><page.Content /></div>
+
+    <div class="files">
+      {files.map((f, i) => (
+        <section class="file-card" aria-labelledby={`file-${i}`}>
+          <div class="file-head">
+            <div>
+              <p class="eyebrow">{f.file} · {f.rows.length} rows · {f.size}</p>
+              <h2 id={`file-${i}`} set:html={f.title} />
+              {f.description && <p class="desc" set:html={f.description} />}
+            </div>
+            <div class="file-actions">
+              <a class="button solid" href={`/Database/${f.file}`} download>Download CSV</a>
+              <a class="button" href={`/Database/${f.file}`}>View raw</a>
+            </div>
+          </div>
+          {f.preview && (
+            <div data-table>
+              <div class="table-tools">
+                <label class="search">
+                  <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                  <span class="sr-only">Filter rows of {f.file}</span>
+                  <input type="search" placeholder="Filter rows (object, type, reference…)" data-filter autocomplete="off">
+                </label>
+                <p class="count" aria-live="polite" data-count>{f.rows.length} of {f.rows.length} rows · click a column to sort</p>
+              </div>
+              <div class="table-box" tabindex="0" role="region" aria-label={`Preview of ${f.file}`}>
+                <table class="data">
+                  <thead>
+                    <tr>{f.header.map((h, c) => (
+                      <th scope="col" data-type={tables[i].numeric[c] ? 'num' : 'text'}><button type="button">{h}</button></th>
+                    ))}</tr>
+                  </thead>
+                  <tbody>
+                    {tables[i].rows.map((r) => (
+                      <tr>{r.map((cell) => (
+                        <td class={cell.cls} data-sort={cell.sort}>
+                          {cell.html ? <Fragment set:html={cell.html} />
+                            : cell.long ? <details><summary>{cell.text}</summary></details>
+                            : cell.text}
+                        </td>
+                      ))}</tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+        </section>
+      ))}
+    </div>
+
+    {site.cite && (
+      <section class="cite" id="cite" aria-labelledby="cite-title">
+        <div class="cite-head">
+          <div>
+            <h2 id="cite-title">How to cite WED</h2>
+            <p>If you use WED in your work, please cite <a href={site.cite_url}>{site.cite}</a>.</p>
+          </div>
+          {site.bibtex && <button type="button" class="button" data-copy>Copy BibTeX</button>}
+        </div>
+        {site.bibtex && <pre data-bibtex>{site.bibtex.trim()}</pre>}
+      </section>
+    )}
+  </div>
+</Base>
+
+<script>
+  // Filter + sort for each data table. Without JavaScript the full table still shows.
+  for (const box of document.querySelectorAll<HTMLElement>('[data-table]')) {
+    const input = box.querySelector<HTMLInputElement>('[data-filter]')!;
+    const count = box.querySelector<HTMLElement>('[data-count]')!;
+    const tbody = box.querySelector('tbody')!;
+    const rows = [...tbody.querySelectorAll<HTMLTableRowElement>('tr')];
+    const text = new Map(rows.map((r) => [r, r.textContent!.toLowerCase()]));
+    const headers = [...box.querySelectorAll<HTMLTableCellElement>('th')];
+
+    input.addEventListener('input', () => {
+      const words = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      let shown = 0;
+      for (const r of rows) {
+        const ok = words.every((w) => text.get(r)!.includes(w));
+        r.hidden = !ok;
+        if (ok) shown++;
+      }
+      count.textContent = `${shown} of ${rows.length} rows`;
+    });
+
+    headers.forEach((th, col) => {
+      th.querySelector('button')!.addEventListener('click', () => {
+        const dir = th.getAttribute('aria-sort') === 'ascending' ? 'descending' : 'ascending';
+        headers.forEach((h) => h.removeAttribute('aria-sort'));
+        th.setAttribute('aria-sort', dir);
+        const numeric = th.dataset.type === 'num';
+        const key = (r: HTMLTableRowElement) => (r.cells[col] as HTMLElement).dataset.sort ?? '';
+        const sorted = [...tbody.rows].sort((a, b) => {
+          const x = key(a), y = key(b);
+          if (x === '' || y === '') return x === y ? 0 : x === '' ? 1 : -1; // empty values always last
+          const c = numeric ? Number(x) - Number(y) : x.localeCompare(y, undefined, { numeric: true });
+          return dir === 'ascending' ? c : -c;
+        });
+        tbody.append(...sorted);
+      });
+    });
+  }
+
+  // Copy BibTeX
+  const copy = document.querySelector<HTMLButtonElement>('[data-copy]');
+  const bib = document.querySelector<HTMLElement>('[data-bibtex]');
+  copy?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(bib!.textContent!);
+      copy.textContent = 'Copied ✓';
+    } catch {
+      getSelection()!.selectAllChildren(bib!);
+      copy.textContent = 'Press ⌘C to copy';
+    }
+    setTimeout(() => (copy.textContent = 'Copy BibTeX'), 2500);
+  });
+</script>

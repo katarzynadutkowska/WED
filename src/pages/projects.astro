@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import * as page from '../../content/projects.md';
+const cards = page.frontmatter.cards || [];
+---
+<Base title={page.frontmatter.title} current="projects">
+  <div class="page-head">
+    <p class="eyebrow">WED</p>
+    <h1>{page.frontmatter.title}</h1>
+  </div>
+  <div class="page-body">
+    <div class="md"><page.Content /></div>
+    {cards.length > 0 && (
+      <div class="link-cards">
+        {cards.map((c) => (
+          <a href={c.url}>
+            <span class="eyebrow">{c.label}</span>
+            <span class="title">{c.title} ↗</span>
+            {c.meta && <span class="meta">{c.meta}</span>}
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</Base>

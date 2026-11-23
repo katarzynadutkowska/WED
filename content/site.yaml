@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+#  General WED settings. Edit the values after the colons.
+# ─────────────────────────────────────────────────────────────
+
+title: Water Emission Database
+short_title: WED
+description: Observational data of water emission from Galactic and extragalactic environments, in one consistent database.
+
+maintainer: Dr. Katarzyna M. Dutkowska
+maintainer_url: https://kmdutkowska.com
+
+# Contact email, shown in the footer. Leave empty ("") to hide it.
+email: dutkowska@strw.leidenuniv.nl
+
+# How to cite WED (shown in the footer and on the Access page).
+# Leave cite empty ("") to hide it.
+cite: Dutkowska & Kristensen 2022, A&A 667, A135
+cite_url: https://www.aanda.org/articles/aa/full_html/2022/11/aa43235-22/aa43235-22.html
+bibtex: |
+  @ARTICLE{2022A&A...667A.135D,
+         author = {{Dutkowska}, K.~M. and {Kristensen}, L.~E.},
+          title = "{Water emission tracing active star formation from the Milky Way to high-z galaxies}",
+        journal = {\aap},
+           year = 2022,
+          month = nov,
+         volume = {667},
+            eid = {A135},
+          pages = {A135},
+            doi = {10.1051/0004-6361/202243235}
+  }
+
+source_url: https://github.com/katarzynadutkowska/WED
+
+# Shown on the home page and in the footer.
+release: Public release v1
+last_updated: November 2025

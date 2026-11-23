@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import * as page from '../../content/content.md';
+---
+<Base title={page.frontmatter.title} current="content">
+  <div class="page-head">
+    <p class="eyebrow">WED</p>
+    <h1>{page.frontmatter.title}</h1>
+  </div>
+  <div class="md page-body"><page.Content /></div>
+</Base>

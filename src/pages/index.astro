@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import * as page from '../../content/index.md';
+import * as access from '../../content/access.md';
+import { site, csvFile } from '../lib/data.js';
+
+const fm = page.frontmatter;
+const totalRows = (access.frontmatter.files || []).reduce((n, f) => n + csvFile(f.file).rows.length, 0);
+const stats = (fm.stats || []).map((s) => ({ ...s, value: s.value === 'rows' ? String(totalRows) : s.value }));
+---
+<Base current="home">
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-text">
+      <p class="eyebrow">{[site.release, site.last_updated && `updated ${site.last_updated}`].filter(Boolean).join(' · ')}</p>
+      <h1>{fm.title}</h1>
+      <p class="intro">{site.description}</p>
+      {stats.length > 0 && (
+        <dl class="stats">
+          {stats.map((s) => <div><dt>{s.label}</dt><dd>{s.value}</dd></div>)}
+        </dl>
+      )}
+      <div class="hero-actions">
+        <a class="button solid" href="/access.html">Download the data</a>
+        <a class="button" href="/content.html">What's in WED</a>
+      </div>
+    </div>
+    <div class="hero-logo" aria-hidden="true">
+      <img class="theme-light-only" src="/Images/WED_logo_light.png" alt="" width="704" height="561">
+      <img class="theme-dark-only" src="/Images/WED_logo_dark.png" alt="" width="704" height="561">
+    </div>
+  </section>
+
+  {fm.notice && (
+    <div class="notice">
+      {fm.notice_title && <strong>{fm.notice_title}</strong>}
+      <p>{fm.notice} <a href="#contact">Get in touch →</a></p>
+    </div>
+  )}
+
+  <div class="md page-body"><page.Content /></div>
+</Base>
