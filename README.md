@@ -45,7 +45,7 @@ npm run dev     # preview at http://localhost:4321
 1. GitHub Desktop → **File → Add local repository** → choose this `WED` folder.
 2. Make sure the current branch (top bar) is **main**.
 3. Commit the changes (summary e.g. `New WED website`), then click
-   **Publish branch**.
+   **Publish branch**. 
 
 ### 2. Connect it to Cloudflare
 1. Cloudflare → **Workers & Pages → Create → Import a repository** → **WED**.
