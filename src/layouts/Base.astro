@@ -27,6 +27,11 @@ const nav = [
   <meta property="og:title" content={pageTitle}>
   <meta property="og:description" content={description}>
   <meta property="og:image" content={new URL('/Images/WED_logo.jpeg', Astro.site)}>
+  <meta property="og:image:alt" content="WED logo: a spiral galaxy with water molecules">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonical}>
+  <meta property="og:site_name" content="Water Emission Database (WED)">
+  <meta name="twitter:card" content="summary">
   <script is:inline>
     (function () {
       var saved = null;
@@ -40,7 +45,7 @@ const nav = [
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
     <nav class="wrap" aria-label="Main">
-      <a class="logo logo-mark" href="/" aria-label="WED — home">
+      <a class="logo logo-mark" href="/" aria-label="WED home">
         <img class="theme-light-only" src="/Images/WED_logo_light.png" alt="" width="52" height="41">
         <img class="theme-dark-only" src="/Images/WED_logo_dark.png" alt="" width="52" height="41">
       </a>
@@ -75,7 +80,7 @@ const nav = [
     </div>
     <div class="wrap footer-bottom">
       <span>{[site.release, site.last_updated && `last updated ${site.last_updated}`].filter(Boolean).join(' · ')}</span>
-      <a href={site.source_url}>Source on GitHub ↗</a>
+      <span style="display:flex;gap:20px;flex-wrap:wrap"><a href={site.source_url}>Source on GitHub ↗</a><a href="https://kmdutkowska.com/impressum/">Impressum &amp; Privacy</a></span>
     </div>
   </footer>
 

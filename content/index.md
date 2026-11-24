@@ -17,7 +17,7 @@ notice: WED is in a paused state, but a large collection of unpublished data is 
 ---
 
 The **Water Emission Database (WED)** brings together observational data of water emission from Galactic and extragalactic environments (Dutkowska & Kristensen 2022, A&A, 667, A135).
-This project aims to provide a unified view of water across the observable Universe — linking star formation, feedback, and astrochemistry through a common molecular tracer.
+This project aims to provide a unified view of water across the observable Universe, linking star formation, feedback, and astrochemistry through a common molecular tracer.
 
 ## About this project
 
@@ -44,4 +44,4 @@ The next stage would involve:
  - Expanding the metadata and analysis tools, and
  - Preparing a broader public release.
 
-If you’re interested in joining this effort — through data sharing, analysis, or coding — please [get in touch](#contact).
+If you’re interested in joining this effort, whether through data sharing, analysis, or coding, please [get in touch](#contact).

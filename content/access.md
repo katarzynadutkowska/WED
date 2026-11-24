@@ -18,4 +18,4 @@ Access to WED is currently provided as **CSV** files, which are updated whenever
 the database changes. The files available for download are listed below.
 
 Files for other transitions currently reside locally while the website is being
-updated — please [get in touch](#contact) if you need data for a specific transition.
+updated. Please [get in touch](#contact) if you need data for a specific transition.
